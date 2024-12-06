@@ -12,11 +12,11 @@
 
 int main() {
     try {
-        std::string file_path = "../datasets/cancer/data.json";
-        DataFrame data = DataFrameUtils::df_from_json(file_path);
-
-        std::unique_ptr<DataFrame> target = data.dataframe_from_column("Column_2");
-        data.drop_columns({"Column_2"});
+        std::string file_path = "../datasets/credit/data.csv";
+        DataFrame data = DataFrameUtils::df_from_csv(file_path);
+        
+        std::unique_ptr<DataFrame> target = data.dataframe_from_column("default payment next month");
+        data.drop_columns({"default payment next month"});
 
         float test_split_ratio = 0.2f;
         auto [training_data, testing_data, training_target, testing_target] =

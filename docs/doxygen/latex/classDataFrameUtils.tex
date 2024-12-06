@@ -1,0 +1,90 @@
+\hypertarget{classDataFrameUtils}{}\doxysection{Data\+Frame\+Utils Class Reference}
+\label{classDataFrameUtils}\index{DataFrameUtils@{DataFrameUtils}}
+
+
+Utility functions for working with Data\+Frames.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Frame\+Utils.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \mbox{\hyperlink{classDataFrameUtils_ac18846415471c644a1f7828f6057140d}{df\+\_\+from\+\_\+csv}} (const std\+::string \&f\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a C\+SV file. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \mbox{\hyperlink{classDataFrameUtils_a418e6f96cfb24480f838a750b2593d68}{df\+\_\+from\+\_\+json}} (const std\+::string \&f\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a J\+S\+ON file. \end{DoxyCompactList}\item 
+static std\+::tuple$<$ \mbox{\hyperlink{classDataFrame}{Data\+Frame}}, \mbox{\hyperlink{classDataFrame}{Data\+Frame}}, \mbox{\hyperlink{classDataFrame}{Data\+Frame}}, \mbox{\hyperlink{classDataFrame}{Data\+Frame}} $>$ \mbox{\hyperlink{classDataFrameUtils_a2800040ed7a6501cd0a6488693e07d2b}{train\+\_\+test\+\_\+split}} (const \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \&data, const \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \&target, float test\+\_\+ratio)
+\begin{DoxyCompactList}\small\item\em Splits data and target into training and testing datasets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility functions for working with Data\+Frames. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataFrameUtils_ac18846415471c644a1f7828f6057140d}\label{classDataFrameUtils_ac18846415471c644a1f7828f6057140d}} 
+\index{DataFrameUtils@{DataFrameUtils}!df\_from\_csv@{df\_from\_csv}}
+\index{df\_from\_csv@{df\_from\_csv}!DataFrameUtils@{DataFrameUtils}}
+\doxysubsubsection{\texorpdfstring{df\_from\_csv()}{df\_from\_csv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataFrame}{Data\+Frame}} Data\+Frame\+Utils\+::df\+\_\+from\+\_\+csv (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a C\+SV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+path} & File path of the C\+SV. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classDataFrame}{Data\+Frame}} loaded from the C\+SV file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataFrameUtils_a418e6f96cfb24480f838a750b2593d68}\label{classDataFrameUtils_a418e6f96cfb24480f838a750b2593d68}} 
+\index{DataFrameUtils@{DataFrameUtils}!df\_from\_json@{df\_from\_json}}
+\index{df\_from\_json@{df\_from\_json}!DataFrameUtils@{DataFrameUtils}}
+\doxysubsubsection{\texorpdfstring{df\_from\_json()}{df\_from\_json()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataFrame}{Data\+Frame}} Data\+Frame\+Utils\+::df\+\_\+from\+\_\+json (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a J\+S\+ON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+path} & File path of the J\+S\+ON. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classDataFrame}{Data\+Frame}} loaded from the J\+S\+ON file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataFrameUtils_a2800040ed7a6501cd0a6488693e07d2b}\label{classDataFrameUtils_a2800040ed7a6501cd0a6488693e07d2b}} 
+\index{DataFrameUtils@{DataFrameUtils}!train\_test\_split@{train\_test\_split}}
+\index{train\_test\_split@{train\_test\_split}!DataFrameUtils@{DataFrameUtils}}
+\doxysubsubsection{\texorpdfstring{train\_test\_split()}{train\_test\_split()}}
+{\footnotesize\ttfamily std\+::tuple$<$ \mbox{\hyperlink{classDataFrame}{Data\+Frame}}, \mbox{\hyperlink{classDataFrame}{Data\+Frame}}, \mbox{\hyperlink{classDataFrame}{Data\+Frame}}, \mbox{\hyperlink{classDataFrame}{Data\+Frame}} $>$ Data\+Frame\+Utils\+::train\+\_\+test\+\_\+split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \&}]{data,  }\item[{const \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \&}]{target,  }\item[{float}]{test\+\_\+ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Splits data and target into training and testing datasets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The input data. \\
+\hline
+{\em target} & The target data. \\
+\hline
+{\em test\+\_\+ratio} & Ratio of data to be used for testing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tuple containing training data, testing data, training target, and testing target. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/Data\+Frame\+Utils.\+h\item 
+framework/data/Data\+Frame\+Utils.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{classActivationLayer}{}\doxysection{Activation\+Layer Class Reference}
+\label{classActivationLayer}\index{ActivationLayer@{ActivationLayer}}
+
+
+A module that applies an activation function.  
+
+
+
+
+{\ttfamily \#include $<$Activation\+Layer.\+h$>$}
+
+
+
+Inheritance diagram for Activation\+Layer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classActivationLayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Activation\+Layer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classActivationLayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classActivationLayer_a5f6f087857cb7794f7e049cc10c3f922}{Activation\+Layer}} (std\+::function$<$ std\+::vector$<$ long double $>$(const std\+::vector$<$ long double $>$ \&)$>$ func, std\+::function$<$ std\+::vector$<$ long double $>$(const std\+::vector$<$ long double $>$ \&)$>$ derivative)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classActivationLayer}{Activation\+Layer}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ long double $>$ \mbox{\hyperlink{classActivationLayer_a33b33c64d0c3a65bc291aa9d3fe77485}{forward}} (const std\+::vector$<$ long double $>$ \&inputs) override
+\begin{DoxyCompactList}\small\item\em Performs the forward pass. \end{DoxyCompactList}\item 
+std\+::vector$<$ long double $>$ \mbox{\hyperlink{classActivationLayer_a08668da8bbf13adf1959dbd94969dd77}{backward}} (const std\+::vector$<$ long double $>$ \&gradients) override
+\begin{DoxyCompactList}\small\item\em Performs the backward pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classActivationLayer_a1958dd12016937ca3ad75da39e968968}{update\+\_\+parameters}} (long double learning\+\_\+rate) override
+\begin{DoxyCompactList}\small\item\em Updates parameters (does nothing for \mbox{\hyperlink{classActivationLayer}{Activation\+Layer}}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A module that applies an activation function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classActivationLayer_a5f6f087857cb7794f7e049cc10c3f922}\label{classActivationLayer_a5f6f087857cb7794f7e049cc10c3f922}} 
+\index{ActivationLayer@{ActivationLayer}!ActivationLayer@{ActivationLayer}}
+\index{ActivationLayer@{ActivationLayer}!ActivationLayer@{ActivationLayer}}
+\doxysubsubsection{\texorpdfstring{ActivationLayer()}{ActivationLayer()}}
+{\footnotesize\ttfamily Activation\+Layer\+::\+Activation\+Layer (\begin{DoxyParamCaption}\item[{std\+::function$<$ std\+::vector$<$ long double $>$(const std\+::vector$<$ long double $>$ \&)$>$}]{func,  }\item[{std\+::function$<$ std\+::vector$<$ long double $>$(const std\+::vector$<$ long double $>$ \&)$>$}]{derivative }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classActivationLayer}{Activation\+Layer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & The activation function to apply. \\
+\hline
+{\em derivative} & The derivative of the activation function. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classActivationLayer_a08668da8bbf13adf1959dbd94969dd77}\label{classActivationLayer_a08668da8bbf13adf1959dbd94969dd77}} 
+\index{ActivationLayer@{ActivationLayer}!backward@{backward}}
+\index{backward@{backward}!ActivationLayer@{ActivationLayer}}
+\doxysubsubsection{\texorpdfstring{backward()}{backward()}}
+{\footnotesize\ttfamily std\+::vector$<$ long double $>$ Activation\+Layer\+::backward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{gradients }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs the backward pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gradients} & The gradient of the loss with respect to the output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The gradient of the loss with respect to the input. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModule_abc440090571522a6e47b28dfc3e748d1}{Module}}.
+
+\mbox{\Hypertarget{classActivationLayer_a33b33c64d0c3a65bc291aa9d3fe77485}\label{classActivationLayer_a33b33c64d0c3a65bc291aa9d3fe77485}} 
+\index{ActivationLayer@{ActivationLayer}!forward@{forward}}
+\index{forward@{forward}!ActivationLayer@{ActivationLayer}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily std\+::vector$<$ long double $>$ Activation\+Layer\+::forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs the forward pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & The input tensor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output tensor after applying the activation function. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModule_ab9a78f901abcb7623d24385be44afcb4}{Module}}.
+
+\mbox{\Hypertarget{classActivationLayer_a1958dd12016937ca3ad75da39e968968}\label{classActivationLayer_a1958dd12016937ca3ad75da39e968968}} 
+\index{ActivationLayer@{ActivationLayer}!update\_parameters@{update\_parameters}}
+\index{update\_parameters@{update\_parameters}!ActivationLayer@{ActivationLayer}}
+\doxysubsubsection{\texorpdfstring{update\_parameters()}{update\_parameters()}}
+{\footnotesize\ttfamily void Activation\+Layer\+::update\+\_\+parameters (\begin{DoxyParamCaption}\item[{long double}]{learning\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates parameters (does nothing for \mbox{\hyperlink{classActivationLayer}{Activation\+Layer}}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em learning\+\_\+rate} & The learning rate for gradient descent. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModule_aee2b5a698adaea896e590a9bea5cd6cf}{Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/nn/Activation\+Layer.\+h\item 
+framework/nn/Activation\+Layer.\+cpp\end{DoxyCompactItemize}

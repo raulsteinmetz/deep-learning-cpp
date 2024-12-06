@@ -1,0 +1,75 @@
+\hypertarget{classJsonDataFrameFactory}{}\doxysection{Json\+Data\+Frame\+Factory Class Reference}
+\label{classJsonDataFrameFactory}\index{JsonDataFrameFactory@{JsonDataFrameFactory}}
+
+
+Concrete \mbox{\hyperlink{classDataFrame}{Data\+Frame}} creator, parses Json files.  
+
+
+
+
+{\ttfamily \#include $<$Json\+Data\+Frame\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Json\+Data\+Frame\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classJsonDataFrameFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Json\+Data\+Frame\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classJsonDataFrameFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataFrame}{Data\+Frame}} \mbox{\hyperlink{classJsonDataFrameFactory_a58d7b5ee30bad8e81ae75b199360f3a8}{create\+\_\+dataframe}} (const std\+::string \&f\+\_\+path) const override
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a Json file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete \mbox{\hyperlink{classDataFrame}{Data\+Frame}} creator, parses Json files. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJsonDataFrameFactory_a58d7b5ee30bad8e81ae75b199360f3a8}\label{classJsonDataFrameFactory_a58d7b5ee30bad8e81ae75b199360f3a8}} 
+\index{JsonDataFrameFactory@{JsonDataFrameFactory}!create\_dataframe@{create\_dataframe}}
+\index{create\_dataframe@{create\_dataframe}!JsonDataFrameFactory@{JsonDataFrameFactory}}
+\doxysubsubsection{\texorpdfstring{create\_dataframe()}{create\_dataframe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataFrame}{Data\+Frame}} Json\+Data\+Frame\+Factory\+::create\+\_\+dataframe (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f\+\_\+path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a Json file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+path} & Path to the Json file to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classDataFrame}{Data\+Frame}} object populated with data from the J\+S\+ON file. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if the file cannot be opened or read. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classDataFrameFactory_a34e56d6af21fb2e6d1a6b95d2d228854}{Data\+Frame\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/Json\+Data\+Frame\+Factory.\+h\item 
+framework/data/Json\+Data\+Frame\+Factory.\+cpp\end{DoxyCompactItemize}

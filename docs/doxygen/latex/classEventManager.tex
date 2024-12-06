@@ -1,0 +1,83 @@
+\hypertarget{classEventManager}{}\doxysection{Event\+Manager Class Reference}
+\label{classEventManager}\index{EventManager@{EventManager}}
+
+
+Base class for managing event subscriptions and notifications.  
+
+
+
+
+{\ttfamily \#include $<$Event\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEventManager_adee2aee69ff9050b9e3aa2e50d5b5db2}{subscribe}} (const std\+::string \&event\+\_\+type, const std\+::function$<$ void(double, size\+\_\+t)$>$ \&listener)
+\begin{DoxyCompactList}\small\item\em Subscribes a listener to a specific event type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventManager_a61e58c102faeeb348a2cb3eb02dea62d}{unsubscribe}} (const std\+::string \&event\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Unsubscribes all listeners from a specific event type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEventManager_a874cbd0d51ed30e9bb5ecad059fd937d}{notify}} (const std\+::string \&event\+\_\+type, double loss, size\+\_\+t epoch)
+\begin{DoxyCompactList}\small\item\em Notifies all listeners of a specific event type with the provided data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for managing event subscriptions and notifications. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEventManager_a874cbd0d51ed30e9bb5ecad059fd937d}\label{classEventManager_a874cbd0d51ed30e9bb5ecad059fd937d}} 
+\index{EventManager@{EventManager}!notify@{notify}}
+\index{notify@{notify}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Event\+Manager\+::notify (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{event\+\_\+type,  }\item[{double}]{loss,  }\item[{size\+\_\+t}]{epoch }\end{DoxyParamCaption})}
+
+
+
+Notifies all listeners of a specific event type with the provided data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+type} & The event type to notify. \\
+\hline
+{\em loss} & The loss value to pass to the listeners. \\
+\hline
+{\em epoch} & The epoch value to pass to the listeners. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventManager_adee2aee69ff9050b9e3aa2e50d5b5db2}\label{classEventManager_adee2aee69ff9050b9e3aa2e50d5b5db2}} 
+\index{EventManager@{EventManager}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily void Event\+Manager\+::subscribe (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{event\+\_\+type,  }\item[{const std\+::function$<$ void(double, size\+\_\+t)$>$ \&}]{listener }\end{DoxyParamCaption})}
+
+
+
+Subscribes a listener to a specific event type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+type} & The event type to subscribe to. \\
+\hline
+{\em listener} & The listener callback to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEventManager_a61e58c102faeeb348a2cb3eb02dea62d}\label{classEventManager_a61e58c102faeeb348a2cb3eb02dea62d}} 
+\index{EventManager@{EventManager}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily void Event\+Manager\+::unsubscribe (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{event\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes all listeners from a specific event type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+type} & The event type to unsubscribe from. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/util/Event\+Manager.\+h\item 
+framework/util/Event\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classBinaryCrossEntropyLoss}{}\doxysection{Binary\+Cross\+Entropy\+Loss Class Reference}
+\label{classBinaryCrossEntropyLoss}\index{BinaryCrossEntropyLoss@{BinaryCrossEntropyLoss}}
+
+
+Implementation of the Binary Cross-\/\+Entropy loss function.  
+
+
+
+
+{\ttfamily \#include $<$B\+C\+E\+Loss.\+h$>$}
+
+
+
+Inheritance diagram for Binary\+Cross\+Entropy\+Loss\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classBinaryCrossEntropyLoss__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Binary\+Cross\+Entropy\+Loss\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classBinaryCrossEntropyLoss__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long double \mbox{\hyperlink{classBinaryCrossEntropyLoss_a9cb1bf7ce1b7541948b40cf1d9c7c220}{compute\+\_\+loss}} (const std\+::vector$<$ long double $>$ \&predictions, const std\+::vector$<$ long double $>$ \&targets) const override
+\begin{DoxyCompactList}\small\item\em Computes the Binary Cross-\/\+Entropy loss for predictions and targets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the Binary Cross-\/\+Entropy loss function. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBinaryCrossEntropyLoss_a9cb1bf7ce1b7541948b40cf1d9c7c220}\label{classBinaryCrossEntropyLoss_a9cb1bf7ce1b7541948b40cf1d9c7c220}} 
+\index{BinaryCrossEntropyLoss@{BinaryCrossEntropyLoss}!compute\_loss@{compute\_loss}}
+\index{compute\_loss@{compute\_loss}!BinaryCrossEntropyLoss@{BinaryCrossEntropyLoss}}
+\doxysubsubsection{\texorpdfstring{compute\_loss()}{compute\_loss()}}
+{\footnotesize\ttfamily long double Binary\+Cross\+Entropy\+Loss\+::compute\+\_\+loss (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{predictions,  }\item[{const std\+::vector$<$ long double $>$ \&}]{targets }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Computes the Binary Cross-\/\+Entropy loss for predictions and targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predictions} & The predicted probabilities (0 $<$= p $<$= 1). \\
+\hline
+{\em targets} & The ground truth binary labels (0 or 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed loss value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLossFunction_ac79b3c2601208c72fe6f4aa82c4dc3a8}{Loss\+Function}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/nn/B\+C\+E\+Loss.\+h\item 
+framework/nn/B\+C\+E\+Loss.\+cpp\end{DoxyCompactItemize}

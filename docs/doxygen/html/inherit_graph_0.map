@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classDataFrameFactory.html" title="Abstract creator in factory method." alt="" coords="5,31,148,57"/>
+<area shape="rect" id="node2" href="$classCSVDataFrameFactory.html" title="Concrete DataFrame creator, parses CSV files." alt="" coords="197,5,365,32"/>
+<area shape="rect" id="node3" href="$classJsonDataFrameFactory.html" title="Concrete DataFrame creator, parses Json files." alt="" coords="196,56,365,83"/>
+</map>

@@ -1,0 +1,115 @@
+\hypertarget{classDataFrameIterator}{}\doxysection{Data\+Frame\+Iterator Class Reference}
+\label{classDataFrameIterator}\index{DataFrameIterator@{DataFrameIterator}}
+
+
+Concrete iterator for iterating rows of a \mbox{\hyperlink{classDataFrame}{Data\+Frame}}.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Frame\+Iterator.\+h$>$}
+
+
+
+Inheritance diagram for Data\+Frame\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classDataFrameIterator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Data\+Frame\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classDataFrameIterator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataFrameIterator_abc8716ffffa595ad4fa5f5590686d3cc}{Data\+Frame\+Iterator}} (const \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \&dataframe)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDataFrameIterator}{Data\+Frame\+Iterator}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDataFrameIterator_ae02dc5a53857ed942eb41f85992a2d9c}{has\+\_\+more}} () const override
+\begin{DoxyCompactList}\small\item\em Checks if there are more rows to be iterated in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+const std\+::vector$<$ long double $>$ \& \mbox{\hyperlink{classDataFrameIterator_a8784b59d728e79f15d9eb218dbfa42fc}{get\+\_\+next}} () override
+\begin{DoxyCompactList}\small\item\em Returns the next row. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataFrameIterator_a99c7682d5a28b86694b9d105bbadfe9b}\label{classDataFrameIterator_a99c7682d5a28b86694b9d105bbadfe9b}} 
+void \mbox{\hyperlink{classDataFrameIterator_a99c7682d5a28b86694b9d105bbadfe9b}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Resets the iterator to the first row. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataFrameIterator_a35a8ca6acc13a05c7f938c216a2a7fa5}\label{classDataFrameIterator_a35a8ca6acc13a05c7f938c216a2a7fa5}} 
+size\+\_\+t \mbox{\hyperlink{classDataFrameIterator_a35a8ca6acc13a05c7f938c216a2a7fa5}{size}} () const override
+\begin{DoxyCompactList}\small\item\em Returns how many rows there are in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete iterator for iterating rows of a \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataFrameIterator_abc8716ffffa595ad4fa5f5590686d3cc}\label{classDataFrameIterator_abc8716ffffa595ad4fa5f5590686d3cc}} 
+\index{DataFrameIterator@{DataFrameIterator}!DataFrameIterator@{DataFrameIterator}}
+\index{DataFrameIterator@{DataFrameIterator}!DataFrameIterator@{DataFrameIterator}}
+\doxysubsubsection{\texorpdfstring{DataFrameIterator()}{DataFrameIterator()}}
+{\footnotesize\ttfamily Data\+Frame\+Iterator\+::\+Data\+Frame\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \&}]{dataframe }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDataFrameIterator}{Data\+Frame\+Iterator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dataframe} & Reference to the \mbox{\hyperlink{classDataFrame}{Data\+Frame}} to iterate. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataFrameIterator_a8784b59d728e79f15d9eb218dbfa42fc}\label{classDataFrameIterator_a8784b59d728e79f15d9eb218dbfa42fc}} 
+\index{DataFrameIterator@{DataFrameIterator}!get\_next@{get\_next}}
+\index{get\_next@{get\_next}!DataFrameIterator@{DataFrameIterator}}
+\doxysubsubsection{\texorpdfstring{get\_next()}{get\_next()}}
+{\footnotesize\ttfamily const std\+::vector$<$ long double $>$ \& Data\+Frame\+Iterator\+::get\+\_\+next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the next row. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the next row. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if no more rows are available. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classIterator_a25a9df5f2136e05912e4ae6025f3f643}{Iterator}}.
+
+\mbox{\Hypertarget{classDataFrameIterator_ae02dc5a53857ed942eb41f85992a2d9c}\label{classDataFrameIterator_ae02dc5a53857ed942eb41f85992a2d9c}} 
+\index{DataFrameIterator@{DataFrameIterator}!has\_more@{has\_more}}
+\index{has\_more@{has\_more}!DataFrameIterator@{DataFrameIterator}}
+\doxysubsubsection{\texorpdfstring{has\_more()}{has\_more()}}
+{\footnotesize\ttfamily bool Data\+Frame\+Iterator\+::has\+\_\+more (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if there are more rows to be iterated in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+\begin{DoxyReturn}{Returns}
+True if there are more rows in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a8f0ccec755a94e2f72e7d6a957be6892}{Iterator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/Data\+Frame\+Iterator.\+h\item 
+framework/data/Data\+Frame\+Iterator.\+cpp\end{DoxyCompactItemize}

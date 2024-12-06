@@ -1,0 +1,62 @@
+\hypertarget{classDataFrameFactory}{}\doxysection{Data\+Frame\+Factory Class Reference}
+\label{classDataFrameFactory}\index{DataFrameFactory@{DataFrameFactory}}
+
+
+Abstract creator in factory method.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Frame\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Data\+Frame\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDataFrameFactory__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataFrameFactory_acd8a09ecb36f98a07267303d38bae552}\label{classDataFrameFactory_acd8a09ecb36f98a07267303d38bae552}} 
+virtual \mbox{\hyperlink{classDataFrameFactory_acd8a09ecb36f98a07267303d38bae552}{$\sim$\+Data\+Frame\+Factory}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classDataFrameFactory}{Data\+Frame\+Factory}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classDataFrame}{Data\+Frame}} \mbox{\hyperlink{classDataFrameFactory_a34e56d6af21fb2e6d1a6b95d2d228854}{create\+\_\+dataframe}} (const std\+::string \&f\+\_\+path) const =0
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from the specified file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract creator in factory method. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataFrameFactory_a34e56d6af21fb2e6d1a6b95d2d228854}\label{classDataFrameFactory_a34e56d6af21fb2e6d1a6b95d2d228854}} 
+\index{DataFrameFactory@{DataFrameFactory}!create\_dataframe@{create\_dataframe}}
+\index{create\_dataframe@{create\_dataframe}!DataFrameFactory@{DataFrameFactory}}
+\doxysubsubsection{\texorpdfstring{create\_dataframe()}{create\_dataframe()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classDataFrame}{Data\+Frame}} Data\+Frame\+Factory\+::create\+\_\+dataframe (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f\+\_\+path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from the specified file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+path} & Path to the file to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classDataFrame}{Data\+Frame}} object populated with data from the file. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classJsonDataFrameFactory_a58d7b5ee30bad8e81ae75b199360f3a8}{Json\+Data\+Frame\+Factory}}, and \mbox{\hyperlink{classCSVDataFrameFactory_a3ba280c71b1b675bbf18a8fc4302fdd4}{C\+S\+V\+Data\+Frame\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/Data\+Frame\+Factory.\+h\end{DoxyCompactItemize}

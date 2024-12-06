@@ -1,0 +1,214 @@
+\hypertarget{classDataFrame}{}\doxysection{Data\+Frame Class Reference}
+\label{classDataFrame}\index{DataFrame@{DataFrame}}
+
+
+Tabular data for deep learning. Implements \mbox{\hyperlink{classIterableCollection}{Iterable\+Collection}}.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Frame.\+h$>$}
+
+
+
+Inheritance diagram for Data\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classDataFrame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Data\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classDataFrame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataFrame_a0febf7af983cb8d2fed044259888f9ac}\label{classDataFrame_a0febf7af983cb8d2fed044259888f9ac}} 
+\mbox{\hyperlink{classDataFrame_a0febf7af983cb8d2fed044259888f9ac}{Data\+Frame}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataFrame_a73cd5d563a877417990f0ba5c635bead}{set\+\_\+columns}} (const std\+::vector$<$ std\+::string $>$ \&names)
+\begin{DoxyCompactList}\small\item\em Sets the column names of the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataFrame_a77a9b0b54728d5432b5e4094e9e1e5e5}{append\+\_\+row}} (const std\+::vector$<$ long double $>$ \&row)
+\begin{DoxyCompactList}\small\item\em Adds a row to the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classDataFrame_a1454776ba8f8d93474925d826dadb7fc}{get\+\_\+columns}} () const
+\begin{DoxyCompactList}\small\item\em Returns the column names of the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::vector$<$ long double $>$ $>$ \& \mbox{\hyperlink{classDataFrame_a1333b0342f7ec6f8fb1f7c89586353bc}{get\+\_\+data}} () const
+\begin{DoxyCompactList}\small\item\em Returns the data matrix stored in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classDataFrame_aa219ed5604d4d6a1336ca63aa923bd58}{row\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of rows in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classDataFrame_a6ba16c5ab5fdae16b9ea33f18d846fe0}{column\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of columns in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classDataFrame}{Data\+Frame}} $>$ \mbox{\hyperlink{classDataFrame_ad84b42e840371a620479df90fb2abcc6}{dataframe\+\_\+from\+\_\+column}} (const std\+::string \&column) const
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a column. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataFrame_aa1eb05d40da1d14e24257025f08a7749}{drop\+\_\+columns}} (const std\+::vector$<$ std\+::string $>$ \&columns)
+\begin{DoxyCompactList}\small\item\em Drops one or more columns from the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIterator}{Iterator}} $>$ \mbox{\hyperlink{classDataFrame_adac26b57fb088c4f1e7c99ae86365c8c}{create\+\_\+iterator}} () const override
+\begin{DoxyCompactList}\small\item\em Creates an iterator for the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. Implements \mbox{\hyperlink{classIterableCollection}{Iterable\+Collection}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tabular data for deep learning. Implements \mbox{\hyperlink{classIterableCollection}{Iterable\+Collection}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataFrame_a77a9b0b54728d5432b5e4094e9e1e5e5}\label{classDataFrame_a77a9b0b54728d5432b5e4094e9e1e5e5}} 
+\index{DataFrame@{DataFrame}!append\_row@{append\_row}}
+\index{append\_row@{append\_row}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{append\_row()}{append\_row()}}
+{\footnotesize\ttfamily void Data\+Frame\+::append\+\_\+row (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{row }\end{DoxyParamCaption})}
+
+
+
+Adds a row to the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & A vector of long doubles representing a row of data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the row size does not match the column count. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classDataFrame_a6ba16c5ab5fdae16b9ea33f18d846fe0}\label{classDataFrame_a6ba16c5ab5fdae16b9ea33f18d846fe0}} 
+\index{DataFrame@{DataFrame}!column\_count@{column\_count}}
+\index{column\_count@{column\_count}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{column\_count()}{column\_count()}}
+{\footnotesize\ttfamily size\+\_\+t Data\+Frame\+::column\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of columns in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+\begin{DoxyReturn}{Returns}
+The column count as a size\+\_\+t. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataFrame_adac26b57fb088c4f1e7c99ae86365c8c}\label{classDataFrame_adac26b57fb088c4f1e7c99ae86365c8c}} 
+\index{DataFrame@{DataFrame}!create\_iterator@{create\_iterator}}
+\index{create\_iterator@{create\_iterator}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{create\_iterator()}{create\_iterator()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIterator}{Iterator}} $>$ Data\+Frame\+::create\+\_\+iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Creates an iterator for the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. Implements \mbox{\hyperlink{classIterableCollection}{Iterable\+Collection}} interface. 
+
+\begin{DoxyReturn}{Returns}
+A unique pointer to a \mbox{\hyperlink{classDataFrameIterator}{Data\+Frame\+Iterator}}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterableCollection_a7e916569864fc6fa50a4ba7062f94d11}{Iterable\+Collection}}.
+
+\mbox{\Hypertarget{classDataFrame_ad84b42e840371a620479df90fb2abcc6}\label{classDataFrame_ad84b42e840371a620479df90fb2abcc6}} 
+\index{DataFrame@{DataFrame}!dataframe\_from\_column@{dataframe\_from\_column}}
+\index{dataframe\_from\_column@{dataframe\_from\_column}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{dataframe\_from\_column()}{dataframe\_from\_column()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classDataFrame}{Data\+Frame}} $>$ Data\+Frame\+::dataframe\+\_\+from\+\_\+column (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{column }\end{DoxyParamCaption}) const}
+
+
+
+Creates a new \mbox{\hyperlink{classDataFrame}{Data\+Frame}} from a column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & The name of the column. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A unique pointer to a new \mbox{\hyperlink{classDataFrame}{Data\+Frame}} containing only the selected column. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the column does not exist. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classDataFrame_aa1eb05d40da1d14e24257025f08a7749}\label{classDataFrame_aa1eb05d40da1d14e24257025f08a7749}} 
+\index{DataFrame@{DataFrame}!drop\_columns@{drop\_columns}}
+\index{drop\_columns@{drop\_columns}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{drop\_columns()}{drop\_columns()}}
+{\footnotesize\ttfamily void Data\+Frame\+::drop\+\_\+columns (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{columns }\end{DoxyParamCaption})}
+
+
+
+Drops one or more columns from the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em columns} & A vector of column names to drop. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if any column does not exist. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classDataFrame_a1454776ba8f8d93474925d826dadb7fc}\label{classDataFrame_a1454776ba8f8d93474925d826dadb7fc}} 
+\index{DataFrame@{DataFrame}!get\_columns@{get\_columns}}
+\index{get\_columns@{get\_columns}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{get\_columns()}{get\_columns()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Data\+Frame\+::get\+\_\+columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the column names of the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+\begin{DoxyReturn}{Returns}
+A vector of strings representing column names. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataFrame_a1333b0342f7ec6f8fb1f7c89586353bc}\label{classDataFrame_a1333b0342f7ec6f8fb1f7c89586353bc}} 
+\index{DataFrame@{DataFrame}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::vector$<$ long double $>$ $>$ \& Data\+Frame\+::get\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the data matrix stored in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+\begin{DoxyReturn}{Returns}
+A vector of vectors of long doubles. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataFrame_aa219ed5604d4d6a1336ca63aa923bd58}\label{classDataFrame_aa219ed5604d4d6a1336ca63aa923bd58}} 
+\index{DataFrame@{DataFrame}!row\_count@{row\_count}}
+\index{row\_count@{row\_count}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{row\_count()}{row\_count()}}
+{\footnotesize\ttfamily size\+\_\+t Data\+Frame\+::row\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of rows in the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+\begin{DoxyReturn}{Returns}
+The row count as a size\+\_\+t. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataFrame_a73cd5d563a877417990f0ba5c635bead}\label{classDataFrame_a73cd5d563a877417990f0ba5c635bead}} 
+\index{DataFrame@{DataFrame}!set\_columns@{set\_columns}}
+\index{set\_columns@{set\_columns}!DataFrame@{DataFrame}}
+\doxysubsubsection{\texorpdfstring{set\_columns()}{set\_columns()}}
+{\footnotesize\ttfamily void Data\+Frame\+::set\+\_\+columns (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{names }\end{DoxyParamCaption})}
+
+
+
+Sets the column names of the \mbox{\hyperlink{classDataFrame}{Data\+Frame}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em names} & A vector of strings representing column names. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/Data\+Frame.\+h\item 
+framework/data/Data\+Frame.\+cpp\end{DoxyCompactItemize}

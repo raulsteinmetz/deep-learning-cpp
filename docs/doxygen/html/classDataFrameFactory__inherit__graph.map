@@ -1,0 +1,5 @@
+<map id="DataFrameFactory" name="DataFrameFactory">
+<area shape="rect" id="node1" title="Abstract creator in factory method." alt="" coords="114,5,257,32"/>
+<area shape="rect" id="node2" href="$classCSVDataFrameFactory.html" title="Concrete DataFrame creator, parses CSV files." alt="" coords="5,80,173,107"/>
+<area shape="rect" id="node3" href="$classJsonDataFrameFactory.html" title="Concrete DataFrame creator, parses Json files." alt="" coords="198,80,367,107"/>
+</map>

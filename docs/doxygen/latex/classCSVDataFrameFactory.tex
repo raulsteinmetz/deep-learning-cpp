@@ -1,0 +1,77 @@
+\hypertarget{classCSVDataFrameFactory}{}\doxysection{C\+S\+V\+Data\+Frame\+Factory Class Reference}
+\label{classCSVDataFrameFactory}\index{CSVDataFrameFactory@{CSVDataFrameFactory}}
+
+
+Concrete \mbox{\hyperlink{classDataFrame}{Data\+Frame}} creator, parses C\+SV files.  
+
+
+
+
+{\ttfamily \#include $<$C\+S\+V\+Data\+Frame\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for C\+S\+V\+Data\+Frame\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classCSVDataFrameFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+S\+V\+Data\+Frame\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classCSVDataFrameFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataFrame}{Data\+Frame}} \mbox{\hyperlink{classCSVDataFrameFactory_a3ba280c71b1b675bbf18a8fc4302fdd4}{create\+\_\+dataframe}} (const std\+::string \&f\+\_\+path) const override
+\begin{DoxyCompactList}\small\item\em Parses a C\+SV file and returns a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete \mbox{\hyperlink{classDataFrame}{Data\+Frame}} creator, parses C\+SV files. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCSVDataFrameFactory_a3ba280c71b1b675bbf18a8fc4302fdd4}\label{classCSVDataFrameFactory_a3ba280c71b1b675bbf18a8fc4302fdd4}} 
+\index{CSVDataFrameFactory@{CSVDataFrameFactory}!create\_dataframe@{create\_dataframe}}
+\index{create\_dataframe@{create\_dataframe}!CSVDataFrameFactory@{CSVDataFrameFactory}}
+\doxysubsubsection{\texorpdfstring{create\_dataframe()}{create\_dataframe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataFrame}{Data\+Frame}} C\+S\+V\+Data\+Frame\+Factory\+::create\+\_\+dataframe (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f\+\_\+path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parses a C\+SV file and returns a \mbox{\hyperlink{classDataFrame}{Data\+Frame}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+path} & Path to the C\+SV file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classDataFrame}{Data\+Frame}} object with data from the C\+SV file. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if the file cannot be opened. \\
+\hline
+{\em std\+::invalid\+\_\+argument} & if non-\/numeric values are found in the data rows. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classDataFrameFactory_a34e56d6af21fb2e6d1a6b95d2d228854}{Data\+Frame\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/C\+S\+V\+Data\+Frame\+Factory.\+h\item 
+framework/data/C\+S\+V\+Data\+Frame\+Factory.\+cpp\end{DoxyCompactItemize}

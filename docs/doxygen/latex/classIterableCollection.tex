@@ -1,0 +1,57 @@
+\hypertarget{classIterableCollection}{}\doxysection{Iterable\+Collection Interface Reference}
+\label{classIterableCollection}\index{IterableCollection@{IterableCollection}}
+
+
+Interface for collections that can provide iterators.  
+
+
+
+
+{\ttfamily \#include $<$Iterable\+Collection.\+h$>$}
+
+
+
+Inheritance diagram for Iterable\+Collection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classIterableCollection__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIterator}{Iterator}} $>$ \mbox{\hyperlink{classIterableCollection_a7e916569864fc6fa50a4ba7062f94d11}{create\+\_\+iterator}} () const =0
+\begin{DoxyCompactList}\small\item\em Factory method to create an iterator for the collection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIterableCollection_a9f1bd8c31684d3c7102f16ba466333e7}\label{classIterableCollection_a9f1bd8c31684d3c7102f16ba466333e7}} 
+virtual \mbox{\hyperlink{classIterableCollection_a9f1bd8c31684d3c7102f16ba466333e7}{$\sim$\+Iterable\+Collection}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \mbox{\hyperlink{classIterableCollection}{Iterable\+Collection}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for collections that can provide iterators. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIterableCollection_a7e916569864fc6fa50a4ba7062f94d11}\label{classIterableCollection_a7e916569864fc6fa50a4ba7062f94d11}} 
+\index{IterableCollection@{IterableCollection}!create\_iterator@{create\_iterator}}
+\index{create\_iterator@{create\_iterator}!IterableCollection@{IterableCollection}}
+\doxysubsubsection{\texorpdfstring{create\_iterator()}{create\_iterator()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classIterator}{Iterator}}$>$ Iterable\+Collection\+::create\+\_\+iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Factory method to create an iterator for the collection. 
+
+\begin{DoxyReturn}{Returns}
+A unique pointer to an \mbox{\hyperlink{classIterator}{Iterator}} instance. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDataFrame_adac26b57fb088c4f1e7c99ae86365c8c}{Data\+Frame}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/Iterable\+Collection.\+h\end{DoxyCompactItemize}

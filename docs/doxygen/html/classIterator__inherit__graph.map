@@ -1,0 +1,4 @@
+<map id="Iterator" name="Iterator">
+<area shape="rect" id="node1" title="Interface for iterators." alt="" coords="41,5,112,32"/>
+<area shape="rect" id="node2" href="$classDataFrameIterator.html" title="Concrete iterator for iterating rows of a DataFrame." alt="" coords="5,80,148,107"/>
+</map>

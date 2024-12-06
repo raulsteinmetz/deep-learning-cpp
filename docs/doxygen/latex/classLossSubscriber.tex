@@ -1,0 +1,56 @@
+\hypertarget{classLossSubscriber}{}\doxysection{Loss\+Subscriber Class Reference}
+\label{classLossSubscriber}\index{LossSubscriber@{LossSubscriber}}
+
+
+Subscriber interface for receiving loss updates.  
+
+
+
+
+{\ttfamily \#include $<$Loss\+Subscriber.\+h$>$}
+
+
+
+Inheritance diagram for Loss\+Subscriber\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classLossSubscriber__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classLossSubscriber_a07530be48b324459853b15da66e9dead}{update}} (double loss, size\+\_\+t epoch)=0
+\begin{DoxyCompactList}\small\item\em Updates the subscriber with a new loss value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Subscriber interface for receiving loss updates. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLossSubscriber_a07530be48b324459853b15da66e9dead}\label{classLossSubscriber_a07530be48b324459853b15da66e9dead}} 
+\index{LossSubscriber@{LossSubscriber}!update@{update}}
+\index{update@{update}!LossSubscriber@{LossSubscriber}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Loss\+Subscriber\+::update (\begin{DoxyParamCaption}\item[{double}]{loss,  }\item[{size\+\_\+t}]{epoch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the subscriber with a new loss value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loss} & The updated loss value. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classTerminalLossDisplay_af48aa354c42d3583f5840b789461e20c}{Terminal\+Loss\+Display}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/util/Loss\+Subscriber.\+h\end{DoxyCompactItemize}

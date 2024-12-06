@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classModule.html" title="Abstract base class for all neural network components." alt="" coords="5,56,76,83"/>
+<area shape="rect" id="node2" href="$classActivationLayer.html" title="A module that applies an activation function." alt="" coords="124,5,248,32"/>
+<area shape="rect" id="node3" href="$classLinearLayer.html" title="Fully connected layer implementation." alt="" coords="137,56,235,83"/>
+<area shape="rect" id="node4" href="$classSequential.html" title="A composite module that contains a sequence of other modules." alt="" coords="141,107,231,133"/>
+</map>

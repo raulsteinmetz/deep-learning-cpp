@@ -1,0 +1,4 @@
+<map id="TerminalLossDisplay" name="TerminalLossDisplay">
+<area shape="rect" id="node1" title="Concrete subscriber for displaying loss updates in the terminal." alt="" coords="5,80,161,107"/>
+<area shape="rect" id="node2" href="$classLossSubscriber.html" title="Subscriber interface for receiving loss updates." alt="" coords="24,5,143,32"/>
+</map>

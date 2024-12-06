@@ -1,0 +1,89 @@
+\hypertarget{classLearningFacade}{}\doxysection{Learning\+Facade Class Reference}
+\label{classLearningFacade}\index{LearningFacade@{LearningFacade}}
+
+
+Facade for managing the learning and testing process.  
+
+
+
+
+{\ttfamily \#include $<$Learning\+Facade.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLearningFacade_a275ff9c21c8098df2cb79a932d98cc4f}{Learning\+Facade}} (const \mbox{\hyperlink{classSequential}{Sequential}} \&model, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLossFunction}{Loss\+Function}} $>$ loss\+\_\+function, size\+\_\+t epochs)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classLearningFacade}{Learning\+Facade}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLearningFacade_a909c58d83f36824846a0f1a1361dadd7}{train}} (\mbox{\hyperlink{classIterator}{Iterator}} \&train\+\_\+loader, \mbox{\hyperlink{classIterator}{Iterator}} \&target\+\_\+loader, long double learning\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Train the model with the given data and parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLearningFacade_ade30f07c77e256c271d22c5060082131}{test}} (\mbox{\hyperlink{classIterator}{Iterator}} \&test\+\_\+loader, \mbox{\hyperlink{classIterator}{Iterator}} \&target\+\_\+loader)
+\begin{DoxyCompactList}\small\item\em Test the model and compute accuracy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Facade for managing the learning and testing process. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLearningFacade_a275ff9c21c8098df2cb79a932d98cc4f}\label{classLearningFacade_a275ff9c21c8098df2cb79a932d98cc4f}} 
+\index{LearningFacade@{LearningFacade}!LearningFacade@{LearningFacade}}
+\index{LearningFacade@{LearningFacade}!LearningFacade@{LearningFacade}}
+\doxysubsubsection{\texorpdfstring{LearningFacade()}{LearningFacade()}}
+{\footnotesize\ttfamily Learning\+Facade\+::\+Learning\+Facade (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSequential}{Sequential}} \&}]{model,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLossFunction}{Loss\+Function}} $>$}]{loss\+\_\+function,  }\item[{size\+\_\+t}]{epochs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classLearningFacade}{Learning\+Facade}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The model to train and test. \\
+\hline
+{\em loss\+\_\+function} & The loss function to use during training/testing. \\
+\hline
+{\em epochs} & The total number of training epochs. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLearningFacade_ade30f07c77e256c271d22c5060082131}\label{classLearningFacade_ade30f07c77e256c271d22c5060082131}} 
+\index{LearningFacade@{LearningFacade}!test@{test}}
+\index{test@{test}!LearningFacade@{LearningFacade}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily void Learning\+Facade\+::test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIterator}{Iterator}} \&}]{test\+\_\+loader,  }\item[{\mbox{\hyperlink{classIterator}{Iterator}} \&}]{target\+\_\+loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Test the model and compute accuracy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+\_\+loader} & Testing data loader. \\
+\hline
+{\em target\+\_\+loader} & Testing target loader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLearningFacade_a909c58d83f36824846a0f1a1361dadd7}\label{classLearningFacade_a909c58d83f36824846a0f1a1361dadd7}} 
+\index{LearningFacade@{LearningFacade}!train@{train}}
+\index{train@{train}!LearningFacade@{LearningFacade}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily void Learning\+Facade\+::train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIterator}{Iterator}} \&}]{train\+\_\+loader,  }\item[{\mbox{\hyperlink{classIterator}{Iterator}} \&}]{target\+\_\+loader,  }\item[{long double}]{learning\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Train the model with the given data and parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+\_\+loader} & Training data loader. \\
+\hline
+{\em target\+\_\+loader} & Target data loader. \\
+\hline
+{\em learning\+\_\+rate} & Learning rate for training. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/util/Learning\+Facade.\+h\end{DoxyCompactItemize}

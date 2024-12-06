@@ -1,0 +1,132 @@
+\hypertarget{classSequential}{}\doxysection{Sequential Class Reference}
+\label{classSequential}\index{Sequential@{Sequential}}
+
+
+A composite module that contains a sequence of other modules.  
+
+
+
+
+{\ttfamily \#include $<$Sequential\+N\+N.\+h$>$}
+
+
+
+Inheritance diagram for Sequential\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classSequential__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sequential\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classSequential__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSequential_ae4f81f296d9501d22f042720e9e911d6}{add\+\_\+module}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModule}{Module}} $>$ \&module)
+\begin{DoxyCompactList}\small\item\em Adds a module to the sequence. \end{DoxyCompactList}\item 
+std\+::vector$<$ long double $>$ \mbox{\hyperlink{classSequential_ac8d5a279c4c75052f5906b70c63b5330}{forward}} (const std\+::vector$<$ long double $>$ \&inputs) override
+\begin{DoxyCompactList}\small\item\em Performs the forward pass through all modules in sequence. \end{DoxyCompactList}\item 
+std\+::vector$<$ long double $>$ \mbox{\hyperlink{classSequential_a40d98e8c9a1c6ca45bbe2fe572014877}{backward}} (const std\+::vector$<$ long double $>$ \&gradients) override
+\begin{DoxyCompactList}\small\item\em Performs the backward pass through all modules in reverse sequence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSequential_a8189f0ddf6b7f14283e470fa8693c20d}{update\+\_\+parameters}} (long double learning\+\_\+rate) override
+\begin{DoxyCompactList}\small\item\em Updates the parameters of all modules in the sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A composite module that contains a sequence of other modules. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSequential_ae4f81f296d9501d22f042720e9e911d6}\label{classSequential_ae4f81f296d9501d22f042720e9e911d6}} 
+\index{Sequential@{Sequential}!add\_module@{add\_module}}
+\index{add\_module@{add\_module}!Sequential@{Sequential}}
+\doxysubsubsection{\texorpdfstring{add\_module()}{add\_module()}}
+{\footnotesize\ttfamily void Sequential\+::add\+\_\+module (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModule}{Module}} $>$ \&}]{module }\end{DoxyParamCaption})}
+
+
+
+Adds a module to the sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & A shared pointer to the module to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSequential_a40d98e8c9a1c6ca45bbe2fe572014877}\label{classSequential_a40d98e8c9a1c6ca45bbe2fe572014877}} 
+\index{Sequential@{Sequential}!backward@{backward}}
+\index{backward@{backward}!Sequential@{Sequential}}
+\doxysubsubsection{\texorpdfstring{backward()}{backward()}}
+{\footnotesize\ttfamily std\+::vector$<$ long double $>$ Sequential\+::backward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{gradients }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs the backward pass through all modules in reverse sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gradients} & The gradient of the loss with respect to the output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The gradient of the loss with respect to the input. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModule_abc440090571522a6e47b28dfc3e748d1}{Module}}.
+
+\mbox{\Hypertarget{classSequential_ac8d5a279c4c75052f5906b70c63b5330}\label{classSequential_ac8d5a279c4c75052f5906b70c63b5330}} 
+\index{Sequential@{Sequential}!forward@{forward}}
+\index{forward@{forward}!Sequential@{Sequential}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily std\+::vector$<$ long double $>$ Sequential\+::forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs the forward pass through all modules in sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & The input tensor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output tensor after passing through all modules. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModule_ab9a78f901abcb7623d24385be44afcb4}{Module}}.
+
+\mbox{\Hypertarget{classSequential_a8189f0ddf6b7f14283e470fa8693c20d}\label{classSequential_a8189f0ddf6b7f14283e470fa8693c20d}} 
+\index{Sequential@{Sequential}!update\_parameters@{update\_parameters}}
+\index{update\_parameters@{update\_parameters}!Sequential@{Sequential}}
+\doxysubsubsection{\texorpdfstring{update\_parameters()}{update\_parameters()}}
+{\footnotesize\ttfamily void Sequential\+::update\+\_\+parameters (\begin{DoxyParamCaption}\item[{long double}]{learning\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the parameters of all modules in the sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em learning\+\_\+rate} & The learning rate for gradient descent. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModule_aee2b5a698adaea896e590a9bea5cd6cf}{Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/nn/Sequential\+N\+N.\+h\item 
+framework/nn/Sequential\+N\+N.\+cpp\end{DoxyCompactItemize}

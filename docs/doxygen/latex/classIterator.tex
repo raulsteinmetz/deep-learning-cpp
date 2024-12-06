@@ -1,0 +1,103 @@
+\hypertarget{classIterator}{}\doxysection{Iterator Interface Reference}
+\label{classIterator}\index{Iterator@{Iterator}}
+
+
+Interface for iterators.  
+
+
+
+
+{\ttfamily \#include $<$Iterator.\+h$>$}
+
+
+
+Inheritance diagram for Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classIterator__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classIterator_a8f0ccec755a94e2f72e7d6a957be6892}{has\+\_\+more}} () const =0
+\begin{DoxyCompactList}\small\item\em Checks if there are more elements to be iterated. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ long double $>$ \& \mbox{\hyperlink{classIterator_a25a9df5f2136e05912e4ae6025f3f643}{get\+\_\+next}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the next element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIterator_a32850eb6f82277c063362f18ac36affe}\label{classIterator_a32850eb6f82277c063362f18ac36affe}} 
+virtual void \mbox{\hyperlink{classIterator_a32850eb6f82277c063362f18ac36affe}{reset}} ()=0
+\begin{DoxyCompactList}\small\item\em Resets the iterator to the first element of the collection. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{classIterator_a702f90360d5e4bf170c80d2396beb757}{size}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in the collection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIterator_a4c28388b53ec9c8a502aeccf13295899}\label{classIterator_a4c28388b53ec9c8a502aeccf13295899}} 
+virtual \mbox{\hyperlink{classIterator_a4c28388b53ec9c8a502aeccf13295899}{$\sim$\+Iterator}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for iterators. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIterator_a25a9df5f2136e05912e4ae6025f3f643}\label{classIterator_a25a9df5f2136e05912e4ae6025f3f643}} 
+\index{Iterator@{Iterator}!get\_next@{get\_next}}
+\index{get\_next@{get\_next}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{get\_next()}{get\_next()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$long double$>$\& Iterator\+::get\+\_\+next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the next element. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the next element. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if no more elements are available. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classDataFrameIterator_a8784b59d728e79f15d9eb218dbfa42fc}{Data\+Frame\+Iterator}}.
+
+\mbox{\Hypertarget{classIterator_a8f0ccec755a94e2f72e7d6a957be6892}\label{classIterator_a8f0ccec755a94e2f72e7d6a957be6892}} 
+\index{Iterator@{Iterator}!has\_more@{has\_more}}
+\index{has\_more@{has\_more}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{has\_more()}{has\_more()}}
+{\footnotesize\ttfamily virtual bool Iterator\+::has\+\_\+more (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if there are more elements to be iterated. 
+
+\begin{DoxyReturn}{Returns}
+True if there are more elements, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDataFrameIterator_ae02dc5a53857ed942eb41f85992a2d9c}{Data\+Frame\+Iterator}}.
+
+\mbox{\Hypertarget{classIterator_a702f90360d5e4bf170c80d2396beb757}\label{classIterator_a702f90360d5e4bf170c80d2396beb757}} 
+\index{Iterator@{Iterator}!size@{size}}
+\index{size@{size}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily virtual size\+\_\+t Iterator\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the number of elements in the collection. 
+
+\begin{DoxyReturn}{Returns}
+Number of elements as a size\+\_\+t. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDataFrameIterator_a35a8ca6acc13a05c7f938c216a2a7fa5}{Data\+Frame\+Iterator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/data/Iterator.\+h\end{DoxyCompactItemize}

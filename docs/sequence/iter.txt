@@ -1,0 +1,13 @@
+title Iterator Method
+
+Client->DataFrame: create_iterator()
+DataFrame->DataFrameIterator: new
+DataFrame-->Client: return Iterator
+Client->DataFrameIterator: has_more()
+DataFrameIterator->DataFrame: row_count()
+DataFrame-->DataFrameIterator: return size_t
+DataFrameIterator-->Client: return bool
+Client->DataFrameIterator: get_next()
+DataFrameIterator->DataFrame: get_data()
+DataFrame-->DataFrameIterator: return vector<vector<long double>>&
+DataFrameIterator-->Client: return vector<long double>&

@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classLossSubscriber.html" title="Subscriber interface for receiving loss updates." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$classTerminalLossDisplay.html" title="Concrete subscriber for displaying loss updates in the terminal." alt="" coords="172,5,328,32"/>
+</map>

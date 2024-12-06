@@ -1,0 +1,137 @@
+\hypertarget{classLinearLayer}{}\doxysection{Linear\+Layer Class Reference}
+\label{classLinearLayer}\index{LinearLayer@{LinearLayer}}
+
+
+Fully connected layer implementation.  
+
+
+
+
+{\ttfamily \#include $<$Linear\+Layer.\+h$>$}
+
+
+
+Inheritance diagram for Linear\+Layer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classLinearLayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Linear\+Layer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classLinearLayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLinearLayer_a4f3f36c7f85ff2792d7c40852d04c455}{Linear\+Layer}} (size\+\_\+t input\+\_\+size, size\+\_\+t output\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classLinearLayer}{Linear\+Layer}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ long double $>$ \mbox{\hyperlink{classLinearLayer_a66527909403a0331196ae337bdfc1de6}{forward}} (const std\+::vector$<$ long double $>$ \&inputs) override
+\begin{DoxyCompactList}\small\item\em Performs the forward pass. \end{DoxyCompactList}\item 
+std\+::vector$<$ long double $>$ \mbox{\hyperlink{classLinearLayer_a5d674d58fe0107c66c594356b7dc7fe4}{backward}} (const std\+::vector$<$ long double $>$ \&gradients) override
+\begin{DoxyCompactList}\small\item\em Performs the backward pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLinearLayer_aea8db0082289d34778a2446e873e5fc7}{update\+\_\+parameters}} (long double learning\+\_\+rate) override
+\begin{DoxyCompactList}\small\item\em Updates the weights and biases using the computed gradients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fully connected layer implementation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLinearLayer_a4f3f36c7f85ff2792d7c40852d04c455}\label{classLinearLayer_a4f3f36c7f85ff2792d7c40852d04c455}} 
+\index{LinearLayer@{LinearLayer}!LinearLayer@{LinearLayer}}
+\index{LinearLayer@{LinearLayer}!LinearLayer@{LinearLayer}}
+\doxysubsubsection{\texorpdfstring{LinearLayer()}{LinearLayer()}}
+{\footnotesize\ttfamily Linear\+Layer\+::\+Linear\+Layer (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{input\+\_\+size,  }\item[{size\+\_\+t}]{output\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classLinearLayer}{Linear\+Layer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+size} & Number of input features. \\
+\hline
+{\em output\+\_\+size} & Number of output features. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLinearLayer_a5d674d58fe0107c66c594356b7dc7fe4}\label{classLinearLayer_a5d674d58fe0107c66c594356b7dc7fe4}} 
+\index{LinearLayer@{LinearLayer}!backward@{backward}}
+\index{backward@{backward}!LinearLayer@{LinearLayer}}
+\doxysubsubsection{\texorpdfstring{backward()}{backward()}}
+{\footnotesize\ttfamily std\+::vector$<$ long double $>$ Linear\+Layer\+::backward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{gradients }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs the backward pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gradients} & The gradient of the loss with respect to the output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The gradient of the loss with respect to the input. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModule_abc440090571522a6e47b28dfc3e748d1}{Module}}.
+
+\mbox{\Hypertarget{classLinearLayer_a66527909403a0331196ae337bdfc1de6}\label{classLinearLayer_a66527909403a0331196ae337bdfc1de6}} 
+\index{LinearLayer@{LinearLayer}!forward@{forward}}
+\index{forward@{forward}!LinearLayer@{LinearLayer}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily std\+::vector$<$ long double $>$ Linear\+Layer\+::forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs the forward pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & The input tensor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output tensor. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModule_ab9a78f901abcb7623d24385be44afcb4}{Module}}.
+
+\mbox{\Hypertarget{classLinearLayer_aea8db0082289d34778a2446e873e5fc7}\label{classLinearLayer_aea8db0082289d34778a2446e873e5fc7}} 
+\index{LinearLayer@{LinearLayer}!update\_parameters@{update\_parameters}}
+\index{update\_parameters@{update\_parameters}!LinearLayer@{LinearLayer}}
+\doxysubsubsection{\texorpdfstring{update\_parameters()}{update\_parameters()}}
+{\footnotesize\ttfamily void Linear\+Layer\+::update\+\_\+parameters (\begin{DoxyParamCaption}\item[{long double}]{learning\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the weights and biases using the computed gradients. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em learning\+\_\+rate} & The learning rate for gradient descent. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModule_aee2b5a698adaea896e590a9bea5cd6cf}{Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/nn/Linear\+Layer.\+h\item 
+framework/nn/Linear\+Layer.\+cpp\end{DoxyCompactItemize}

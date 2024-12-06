@@ -1,0 +1,61 @@
+\hypertarget{classLossFunction}{}\doxysection{Loss\+Function Class Reference}
+\label{classLossFunction}\index{LossFunction@{LossFunction}}
+
+
+Abstract interface for loss functions.  
+
+
+
+
+{\ttfamily \#include $<$Loss\+Function.\+h$>$}
+
+
+
+Inheritance diagram for Loss\+Function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classLossFunction__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual long double \mbox{\hyperlink{classLossFunction_ac79b3c2601208c72fe6f4aa82c4dc3a8}{compute\+\_\+loss}} (const std\+::vector$<$ long double $>$ \&predictions, const std\+::vector$<$ long double $>$ \&targets) const =0
+\begin{DoxyCompactList}\small\item\em Computes the loss given predictions and targets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface for loss functions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLossFunction_ac79b3c2601208c72fe6f4aa82c4dc3a8}\label{classLossFunction_ac79b3c2601208c72fe6f4aa82c4dc3a8}} 
+\index{LossFunction@{LossFunction}!compute\_loss@{compute\_loss}}
+\index{compute\_loss@{compute\_loss}!LossFunction@{LossFunction}}
+\doxysubsubsection{\texorpdfstring{compute\_loss()}{compute\_loss()}}
+{\footnotesize\ttfamily virtual long double Loss\+Function\+::compute\+\_\+loss (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{predictions,  }\item[{const std\+::vector$<$ long double $>$ \&}]{targets }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Computes the loss given predictions and targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predictions} & The predicted values. \\
+\hline
+{\em targets} & The ground truth values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed loss value. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classBinaryCrossEntropyLoss_a9cb1bf7ce1b7541948b40cf1d9c7c220}{Binary\+Cross\+Entropy\+Loss}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/nn/Loss\+Function.\+h\end{DoxyCompactItemize}

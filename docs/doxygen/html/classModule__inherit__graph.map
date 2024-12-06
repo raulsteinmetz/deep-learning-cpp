@@ -1,0 +1,6 @@
+<map id="Module" name="Module">
+<area shape="rect" id="node1" title="Abstract base class for all neural network components." alt="" coords="168,5,239,32"/>
+<area shape="rect" id="node2" href="$classActivationLayer.html" title="A module that applies an activation function." alt="" coords="5,80,129,107"/>
+<area shape="rect" id="node3" href="$classLinearLayer.html" title="Fully connected layer implementation." alt="" coords="154,80,253,107"/>
+<area shape="rect" id="node4" href="$classSequential.html" title="A composite module that contains a sequence of other modules." alt="" coords="277,80,367,107"/>
+</map>

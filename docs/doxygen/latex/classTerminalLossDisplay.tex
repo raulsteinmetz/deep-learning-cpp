@@ -1,0 +1,91 @@
+\hypertarget{classTerminalLossDisplay}{}\doxysection{Terminal\+Loss\+Display Class Reference}
+\label{classTerminalLossDisplay}\index{TerminalLossDisplay@{TerminalLossDisplay}}
+
+
+Concrete subscriber for displaying loss updates in the terminal.  
+
+
+
+
+{\ttfamily \#include $<$Terminal\+Loss\+Display.\+h$>$}
+
+
+
+Inheritance diagram for Terminal\+Loss\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classTerminalLossDisplay__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Terminal\+Loss\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classTerminalLossDisplay__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTerminalLossDisplay_a80344601abd8a4c1f1002dac2383a27e}{Terminal\+Loss\+Display}} (const std\+::string \&display\+\_\+title, size\+\_\+t epochs)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classTerminalLossDisplay}{Terminal\+Loss\+Display}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTerminalLossDisplay_af48aa354c42d3583f5840b789461e20c}{update}} (double loss, size\+\_\+t epoch)
+\begin{DoxyCompactList}\small\item\em Updates the terminal display with the current loss and epoch. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete subscriber for displaying loss updates in the terminal. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTerminalLossDisplay_a80344601abd8a4c1f1002dac2383a27e}\label{classTerminalLossDisplay_a80344601abd8a4c1f1002dac2383a27e}} 
+\index{TerminalLossDisplay@{TerminalLossDisplay}!TerminalLossDisplay@{TerminalLossDisplay}}
+\index{TerminalLossDisplay@{TerminalLossDisplay}!TerminalLossDisplay@{TerminalLossDisplay}}
+\doxysubsubsection{\texorpdfstring{TerminalLossDisplay()}{TerminalLossDisplay()}}
+{\footnotesize\ttfamily Terminal\+Loss\+Display\+::\+Terminal\+Loss\+Display (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{display\+\_\+title,  }\item[{size\+\_\+t}]{epochs }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classTerminalLossDisplay}{Terminal\+Loss\+Display}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+\_\+title} & The title to display in the terminal. \\
+\hline
+{\em epochs} & The total number of epochs for training. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTerminalLossDisplay_af48aa354c42d3583f5840b789461e20c}\label{classTerminalLossDisplay_af48aa354c42d3583f5840b789461e20c}} 
+\index{TerminalLossDisplay@{TerminalLossDisplay}!update@{update}}
+\index{update@{update}!TerminalLossDisplay@{TerminalLossDisplay}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Terminal\+Loss\+Display\+::update (\begin{DoxyParamCaption}\item[{double}]{loss,  }\item[{size\+\_\+t}]{epoch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the terminal display with the current loss and epoch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loss} & The updated loss value. \\
+\hline
+{\em epoch} & The current epoch. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classLossSubscriber_a07530be48b324459853b15da66e9dead}{Loss\+Subscriber}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/util/Terminal\+Loss\+Display.\+h\item 
+framework/util/Terminal\+Loss\+Display.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+title Iterator Method
+
+Client->DataFrame: create_iterator()
+DataFrame->DataFrameIterator: new
+DataFrame-->Client: return

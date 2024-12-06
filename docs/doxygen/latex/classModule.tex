@@ -1,0 +1,104 @@
+\hypertarget{classModule}{}\doxysection{Module Class Reference}
+\label{classModule}\index{Module@{Module}}
+
+
+Abstract base class for all neural network components.  
+
+
+
+
+{\ttfamily \#include $<$Module.\+h$>$}
+
+
+
+Inheritance diagram for Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModule__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::vector$<$ long double $>$ \mbox{\hyperlink{classModule_ab9a78f901abcb7623d24385be44afcb4}{forward}} (const std\+::vector$<$ long double $>$ \&inputs)=0
+\begin{DoxyCompactList}\small\item\em Forward pass for the module. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ long double $>$ \mbox{\hyperlink{classModule_abc440090571522a6e47b28dfc3e748d1}{backward}} (const std\+::vector$<$ long double $>$ \&gradients)=0
+\begin{DoxyCompactList}\small\item\em Backward pass for the module. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModule_aee2b5a698adaea896e590a9bea5cd6cf}{update\+\_\+parameters}} (long double learning\+\_\+rate)=0
+\begin{DoxyCompactList}\small\item\em Updates the module\textquotesingle{}s parameters using gradients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all neural network components. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModule_abc440090571522a6e47b28dfc3e748d1}\label{classModule_abc440090571522a6e47b28dfc3e748d1}} 
+\index{Module@{Module}!backward@{backward}}
+\index{backward@{backward}!Module@{Module}}
+\doxysubsubsection{\texorpdfstring{backward()}{backward()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$long double$>$ Module\+::backward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{gradients }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Backward pass for the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gradients} & The gradient of the loss with respect to the output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The gradient of the loss with respect to the input. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classLinearLayer_a5d674d58fe0107c66c594356b7dc7fe4}{Linear\+Layer}}, \mbox{\hyperlink{classActivationLayer_a08668da8bbf13adf1959dbd94969dd77}{Activation\+Layer}}, and \mbox{\hyperlink{classSequential_a40d98e8c9a1c6ca45bbe2fe572014877}{Sequential}}.
+
+\mbox{\Hypertarget{classModule_ab9a78f901abcb7623d24385be44afcb4}\label{classModule_ab9a78f901abcb7623d24385be44afcb4}} 
+\index{Module@{Module}!forward@{forward}}
+\index{forward@{forward}!Module@{Module}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$long double$>$ Module\+::forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ long double $>$ \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Forward pass for the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputs} & The input tensor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output tensor. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classLinearLayer_a66527909403a0331196ae337bdfc1de6}{Linear\+Layer}}, \mbox{\hyperlink{classActivationLayer_a33b33c64d0c3a65bc291aa9d3fe77485}{Activation\+Layer}}, and \mbox{\hyperlink{classSequential_ac8d5a279c4c75052f5906b70c63b5330}{Sequential}}.
+
+\mbox{\Hypertarget{classModule_aee2b5a698adaea896e590a9bea5cd6cf}\label{classModule_aee2b5a698adaea896e590a9bea5cd6cf}} 
+\index{Module@{Module}!update\_parameters@{update\_parameters}}
+\index{update\_parameters@{update\_parameters}!Module@{Module}}
+\doxysubsubsection{\texorpdfstring{update\_parameters()}{update\_parameters()}}
+{\footnotesize\ttfamily virtual void Module\+::update\+\_\+parameters (\begin{DoxyParamCaption}\item[{long double}]{learning\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the module\textquotesingle{}s parameters using gradients. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em learning\+\_\+rate} & The learning rate for gradient descent. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classLinearLayer_aea8db0082289d34778a2446e873e5fc7}{Linear\+Layer}}, \mbox{\hyperlink{classActivationLayer_a1958dd12016937ca3ad75da39e968968}{Activation\+Layer}}, and \mbox{\hyperlink{classSequential_a8189f0ddf6b7f14283e470fa8693c20d}{Sequential}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/nn/Module.\+h\end{DoxyCompactItemize}

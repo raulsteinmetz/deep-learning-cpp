@@ -1,0 +1,75 @@
+\hypertarget{classLossPublisher}{}\doxysection{Loss\+Publisher Class Reference}
+\label{classLossPublisher}\index{LossPublisher@{LossPublisher}}
+
+
+Publisher for tracking and notifying about loss updates.  
+
+
+
+
+{\ttfamily \#include $<$Loss\+Publisher.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLossPublisher_a07f7fc90c2fb45a692f0f31195660c88}{publish\+\_\+loss}} (double loss, size\+\_\+t epoch)
+\begin{DoxyCompactList}\small\item\em Adds a new loss value and notifies subscribers. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::pair$<$ double, size\+\_\+t $>$ $>$ \& \mbox{\hyperlink{classLossPublisher_ae3e6186145613c446ddd767dfb1bc4d0}{get\+\_\+losses}} () const
+\begin{DoxyCompactList}\small\item\em Gets all the recorded loss values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEventManager}{Event\+Manager}} \& \mbox{\hyperlink{classLossPublisher_a892628509491ad3ebe45f51f8db26304}{get\+\_\+event\+\_\+manager}} ()
+\begin{DoxyCompactList}\small\item\em Gets the event manager for managing subscriptions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Publisher for tracking and notifying about loss updates. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLossPublisher_a892628509491ad3ebe45f51f8db26304}\label{classLossPublisher_a892628509491ad3ebe45f51f8db26304}} 
+\index{LossPublisher@{LossPublisher}!get\_event\_manager@{get\_event\_manager}}
+\index{get\_event\_manager@{get\_event\_manager}!LossPublisher@{LossPublisher}}
+\doxysubsubsection{\texorpdfstring{get\_event\_manager()}{get\_event\_manager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEventManager}{Event\+Manager}} \& Loss\+Publisher\+::get\+\_\+event\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the event manager for managing subscriptions. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the event manager. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLossPublisher_ae3e6186145613c446ddd767dfb1bc4d0}\label{classLossPublisher_ae3e6186145613c446ddd767dfb1bc4d0}} 
+\index{LossPublisher@{LossPublisher}!get\_losses@{get\_losses}}
+\index{get\_losses@{get\_losses}!LossPublisher@{LossPublisher}}
+\doxysubsubsection{\texorpdfstring{get\_losses()}{get\_losses()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::pair$<$ double, size\+\_\+t $>$ $>$ \& Loss\+Publisher\+::get\+\_\+losses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets all the recorded loss values. 
+
+\begin{DoxyReturn}{Returns}
+A const reference to the vector of loss values and epochs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLossPublisher_a07f7fc90c2fb45a692f0f31195660c88}\label{classLossPublisher_a07f7fc90c2fb45a692f0f31195660c88}} 
+\index{LossPublisher@{LossPublisher}!publish\_loss@{publish\_loss}}
+\index{publish\_loss@{publish\_loss}!LossPublisher@{LossPublisher}}
+\doxysubsubsection{\texorpdfstring{publish\_loss()}{publish\_loss()}}
+{\footnotesize\ttfamily void Loss\+Publisher\+::publish\+\_\+loss (\begin{DoxyParamCaption}\item[{double}]{loss,  }\item[{size\+\_\+t}]{epoch }\end{DoxyParamCaption})}
+
+
+
+Adds a new loss value and notifies subscribers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loss} & The loss value to add. \\
+\hline
+{\em epoch} & The epoch number associated with the loss. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/util/Loss\+Publisher.\+h\item 
+framework/util/Loss\+Publisher.\+cpp\end{DoxyCompactItemize}
